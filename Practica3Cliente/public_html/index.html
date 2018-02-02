@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="app">
+    <head>
+        <title>Ejemplo Angular</title>
+        <!-- biblioteca angular -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <!-- Nuestro fichero Angular -->
+        <script src="script.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body ng-controller="controladorIndex">
+        <div class="panel panel-primary">
+            <h1 class="panel-heading">Futbol</h1>
+            <button type="button" onclick = "location.href = 'administrador.html'" class="btn btn-info" >Administrador</button>
+            <button type="button" onclick = "location.href = 'entrenador.html'" class="btn btn-info">Entrenador</button>
+       
+        </div>
+    </body>
+</html>

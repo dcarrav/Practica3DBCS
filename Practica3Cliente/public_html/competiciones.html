@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Competiciones</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="panel-body">
+            <table class="table table-striped table-bordered">
+                <thead>
+                    <tr>
+                        <th>caption</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="item in competiciones">
+                        <td>{{item.caption}}</td>
+                        <td class= "text-center">
+                            <button class="btn btn-xs btn-primary" ng-click="getEquipos(item.id)" >Enlace equipo</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        <div>
+            
+            <button class="btn btn-primary" ng-click="getCompeticiones()">Refresh</button>
+        </div>
+    </div>
+</body>
+</html>
+

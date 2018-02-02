@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="appEntrenador">
+    <head>
+        <title>Entrenador</title>
+        <!-- biblioteca angular -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <!-- Nuestro fichero Angular -->
+        <script src="scriptEntrenador.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body ng-controller="controladorEntrenador">
+        <div class="panel panel-primary">
+            <h1 class="panel-heading">Entrenador</h1>
+            <ng-include src="'identificacion.html'" ng-show="displayMode === 'identificacion' "></ng-include>
+            <ng-include src="'acceso.html'" ng-show = "displayMode === 'acceso' "></ng-include>
+            <ng-include src="'addJugadoresLibres.html'" ng-show = "displayMode === 'addJugadoresLibres' "></ng-include>
+            <ng-include src="'borrar.html'" ng-show = "displayMode === 'borrar' "></ng-include>
+            
+        </div>
+    </body>
+</html>
+
